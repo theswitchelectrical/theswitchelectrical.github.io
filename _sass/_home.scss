@@ -1,0 +1,295 @@
+// =======================================
+//  Header SASS
+// =======================================
+body {
+	padding-top: 0px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 1.6em;
+	color: rgb(95, 106, 125);
+}
+p {
+	margin-bottom: 1.75rem;
+}
+.dim {
+	color: #ffffff;
+}
+.small {
+	font-size: 14px;
+}
+.italics {
+	font-style: italic;
+}
+a {
+	color: #0097ff;
+}
+a:hover {
+	color: #0097ff;
+	text-decoration: underline;
+}
+h1, h2 {
+  font-weight: 500;
+  margin-top: 10px;
+	margin-bottom: 40px;
+	color: rgb(95, 106, 125);
+	font-size: 35px;
+}
+h2 {
+	font-size: 32px;
+}
+hr.soften {
+	margin: 40px 0;
+	height: 1px;
+	border: none;
+	background-color: #c0c8c9;
+	background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+}
+.help-red {
+	color: red;
+}
+blockquote {
+	background-color: none;
+}
+img.full-logo {
+  position: absolute;
+  top: 5px;
+  left: 9.35%;
+}
+img#navbar-logo {
+  opacity: 0;
+}
+/* ===================================================
+					MASTHEAD
+=================================================== */
+section.jumper:before {
+	display: block;
+	content: " ";
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden;
+}
+.cleangreen {
+	background-image: url('/img/cleangreen.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	min-height: 500px;
+	height: 100vh;
+	padding-top: 70px;
+	text-align: center;
+	display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: center;
+}
+.cleangreen h1 {
+	font-size: 56px;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.55);
+}
+.btn-special {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 3px solid #fff;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 300;
+	text-align: center;
+	padding-top: 17px;
+	padding-left: 14px;
+	transition: 0.4s ease;
+}
+.btn-special:hover {
+	background-color: rgba(50, 50, 50, 0.7);
+	color: #fff;
+}
+/* ===================================================
+					ABOUT THE SWITCH and SOLAR INSTALLATIONS and RECENT WORK and CONTACT
+=================================================== */
+.about,
+.solar,
+.recent,
+.led,
+.contact-details {
+	padding: 70px 0px;
+}
+.solar {
+	background-image: url('/img/solar-panel-green2.jpg');
+	background-position: left top;
+	background-repeat: repeat;
+}
+.solid-green {
+  background-color: #badcb8;
+  padding: 50px 30px;
+  color: #000;
+}
+.solid-green h1 {
+  color: #000;
+}
+.recent {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.carousel {
+	max-width: 800px;
+	margin: 25px auto;
+}
+.carousel-caption {
+	left: 0;
+	bottom: 0;
+	padding: 10px 20px;
+	background-color: rgba(0,0,0,.4);
+	width: 100%;
+	text-align: left;
+}
+.carousel-caption p {
+	font-size: 0.8em;
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li {
+	border-color: #000;
+}
+.carousel-indicators li.active {
+	background: #000;
+	height: 10px;
+	width: 10px;
+	margin: 1px;
+}
+.fa-chevron-left,
+.fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.contact-details {
+  border-top: 1px solid #ddd;
+	background-image: url('/img/crossword.png');
+	background-color: #f4f5f7;
+}
+.led {
+  background-image: url('/img/blue_squares.png');
+	background-position: left top;
+	background-repeat: repeat;
+}
+.panel-contact {
+	background: transparent;
+	padding: 15px;
+	border: none;
+}
+
+/* MOBILE TINGS ================================== */
+
+@media (min-width: 767px) {
+  .carousel-control.left,
+  .carousel-control.right {
+    background-image: none;
+  }
+  .carousel-control.left {
+    right: 0;
+    left: -15%;
+  }
+  .carousel-control.right {
+    left: 100%;
+  }
+  .black {
+    color: #000;
+  }
+}
+@media (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+	img.full-logo {
+  	position: absolute;
+  	display: block;
+  	left: 50%;
+  	margin-top: 50px;
+  	margin-left: -100px;
+  	width: 200px;
+	}
+	.cleangreen {
+	padding-top: 20px;
+	text-align: center;
+	}
+	.cleangreen h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	padding-top: 30px;
+	}
+	.masthead {
+	padding-bottom: 0px;
+	}
+	.contact-form {
+	text-align: center;
+	}
+	.the_dutch_seas {
+	text-align: center;
+	}
+}
+
+/* ANIMATIONS */
+/* Thanks to Dan Eden -- https://github.com/daneden/animate.css */
+.animated {
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(0px, -3px, 0);
+    transform: translate3d(0px, -3px, 0);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(0px, 3px, 0);
+    transform: translate3d(0px, 3px, 0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(0px, -3px, 0);
+    -ms-transform: translate3d(0px, -3px, 0);
+    transform: translate3d(0px, -3px, 0);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(0px, 3px, 0);
+    -ms-transform: translate3d(0px, 3px, 0);
+    transform: translate3d(0px, 3px, 0);
+  }
+}
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+/* ===================================================
+					PADDING AND MARGINS
+=================================================== */
+.ptop30 {
+	padding-top: 30px;
+}

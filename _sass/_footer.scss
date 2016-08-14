@@ -1,0 +1,32 @@
+// =======================================
+//  Footer
+// =======================================
+
+.site-footer {
+  width: 100%;
+  background: #f8f8f8;
+  border-top: $border;
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
+  h2 {
+    color: $brand-color;
+  }
+}
+/* dutch seas */
+.the_dutch_seas {
+	padding-top: 35px;
+	padding-bottom: 30px;
+}
+p.footer {
+	font-size: 14px;
+	color: #4a4a4a;
+}
+a.sam {
+	color: rgb(95, 106, 125);
+	text-decoration: none;
+}
+
+a.sam:hover {
+	color: #0097ff;
+	text-decoration: underline;
+}

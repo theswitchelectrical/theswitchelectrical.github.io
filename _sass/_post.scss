@@ -1,0 +1,17 @@
+// =======================================
+//  Post SASS
+// =======================================
+#postWrapper {
+  padding-top: $spacing-unit;
+  padding-bottom: ($spacing-unit * 2);
+}
+#postHero {
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: $spacing-unit;
+}
+.post-header {
+  border-bottom: $border;
+  margin-bottom: $spacing-unit;
+}

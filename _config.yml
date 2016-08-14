@@ -1,0 +1,11 @@
+# Site settings
+title: The Switch All Electrical Services
+email: guy@theswitchelectrical.com.au
+description: > # this means to ignore newlines until "baseurl:"
+  The Switch is a solar focused electrical services company based in the Bega Valley, NSW. We pride ourselves on providing the highest quality solar installations on the Sapphire Coast, both commercial and domestic, with the customer service to match.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://theswitchelectrical.com.au" # the base hostname & protocol for your site
+
+# Build settings
+author: sam@mead.fm
+markdown: kramdown

@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="{{ site.github.url }}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
+
+  <!-- If you want a favicon, put it here -->
+	<link rel="icon" type="image/png" href="/img/favicon.png" />
+	<link rel="icon" type="image/ico" href="/img/favicon.ico" />
+
+  <title>
+    {% if page.title %}
+      {{ page.title | escape }} •
+    {% endif %}
+    {{ site.title | escape }}
+  </title>
+
+  <!-- HEAP web analytics -->
+	<script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["identify","track"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("2246426386");
+  </script>
+
+</head>
